@@ -2,10 +2,7 @@
 
 namespace Application\InputFilter;
 
-use Zend\Filter\StringTrim;
-use Zend\Filter\StripTags;
 use Zend\InputFilter\InputFilter;
-use Zend\Validator\StringLength;
 use Application\Form\Filter\GarbageFilter;
 
 

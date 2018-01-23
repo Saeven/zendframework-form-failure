@@ -32,7 +32,8 @@ class IndexController extends AbstractActionController
                 echo "<h1>The form was successfully submitted, and was valid.</h1>";
             }
 
-            echo "<pre>The submitted axis value was " . $this->form->get('axis')->getValue() . ".</pre>";
+            echo "<pre>The data drawn from the form was " . $this->form->getData()['axis'] . ".</pre>";
+
         }
 
 

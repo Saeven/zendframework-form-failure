@@ -2,7 +2,6 @@
 
 namespace Application\Form;
 
-use Zend\Captcha;
 use Zend\Form\Element;
 use Zend\Form\Form;
 use Zend\Form\Element\Text;
