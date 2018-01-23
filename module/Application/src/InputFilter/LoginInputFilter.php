@@ -19,32 +19,6 @@ class LoginInputFilter extends InputFilter
     {
 
         $this->add([
-            'name' => 'email',
-            'required' => true,
-            'filters' => [
-                ['name' => StringTrim::class],
-                ['name' => StripTags::class],
-            ],
-        ]);
-
-        $this->add([
-            'name' => 'password',
-            'required' => true,
-            'filters' => [
-                ['name' => StringTrim::class],
-            ],
-            'validators' => [
-                [
-                    'name' => StringLength::class,
-                    'options' => [
-                        'message' => _("Your password must be at least 8 characters long"),
-                        'min' => 8,
-                    ],
-                ],
-            ],
-        ]);
-
-        $this->add([
             'name' => 'axis',
             'required' => false,
             'filters' => [
