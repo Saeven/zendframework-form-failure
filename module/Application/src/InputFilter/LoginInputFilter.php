@@ -2,6 +2,7 @@
 
 namespace Application\InputFilter;
 
+use Application\Form\Validator\GarbageValidator;
 use Zend\InputFilter\InputFilter;
 use Application\Form\Filter\GarbageFilter;
 
@@ -20,6 +21,9 @@ class LoginInputFilter extends InputFilter
             'required' => false,
             'filters' => [
                 ['name' => GarbageFilter::class],
+            ],
+            'validators' => [
+                ['name' => GarbageValidator::class],
             ],
         ]);
     }
